@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="axJ-lk-WjW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location-->
+        <scene sceneID="Rc2-q8-8vy">
+            <objects>
+                <viewController title="Location" id="LP6-3z-bUr" customClass="LocationController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="itE-hj-NS5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5HN-uz-goB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KZq-dt-wU3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zrp-v8-hem">
+                                <rect key="frame" x="20" y="115" width="434" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LP6-3z-bUr" id="AZL-N8-Vim"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-MF-OKt">
+                                <rect key="frame" x="20" y="178" width="434" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LP6-3z-bUr" id="njE-eK-I8I"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPp-ZO-fEA">
+                                <rect key="frame" x="20" y="244" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="View Route">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewRoute:" destination="LP6-3z-bUr" eventType="touchUpInside" id="rV2-rp-YVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwz-bL-AcZ">
+                                <rect key="frame" x="508" y="115" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="0NZ-Xw-b7p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkAddressAction:" destination="LP6-3z-bUr" eventType="touchUpInside" id="9RW-jF-9cf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nm-fD-jFK">
+                                <rect key="frame" x="508" y="178" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkAddressAction:" destination="LP6-3z-bUr" eventType="touchUpInside" id="1Ff-Do-dWU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jwz-bL-AcZ" firstAttribute="trailing" secondItem="KZq-dt-wU3" secondAttribute="trailingMargin" id="64T-QC-BTN"/>
+                            <constraint firstItem="uPp-ZO-fEA" firstAttribute="leading" secondItem="KZq-dt-wU3" secondAttribute="leadingMargin" id="8KX-dV-W2K"/>
+                            <constraint firstItem="gnr-MF-OKt" firstAttribute="top" secondItem="9nm-fD-jFK" secondAttribute="top" id="Kjf-eV-bWK"/>
+                            <constraint firstItem="jwz-bL-AcZ" firstAttribute="leading" secondItem="Zrp-v8-hem" secondAttribute="trailing" constant="54" id="NSK-Tr-hfr"/>
+                            <constraint firstItem="9nm-fD-jFK" firstAttribute="leading" secondItem="jwz-bL-AcZ" secondAttribute="leading" id="OIr-FP-r8c"/>
+                            <constraint firstItem="9nm-fD-jFK" firstAttribute="trailing" secondItem="uPp-ZO-fEA" secondAttribute="trailing" id="Peq-c8-jIi"/>
+                            <constraint firstItem="Zrp-v8-hem" firstAttribute="trailing" secondItem="gnr-MF-OKt" secondAttribute="trailing" id="Q03-lA-M1g"/>
+                            <constraint firstItem="jwz-bL-AcZ" firstAttribute="top" secondItem="Zrp-v8-hem" secondAttribute="top" id="RJc-rv-2Mx"/>
+                            <constraint firstItem="gnr-MF-OKt" firstAttribute="top" secondItem="Zrp-v8-hem" secondAttribute="bottom" constant="33" id="Xld-PC-jQw"/>
+                            <constraint firstItem="uPp-ZO-fEA" firstAttribute="top" secondItem="gnr-MF-OKt" secondAttribute="bottom" constant="36" id="Y0b-01-9VQ"/>
+                            <constraint firstItem="jwz-bL-AcZ" firstAttribute="trailing" secondItem="9nm-fD-jFK" secondAttribute="trailing" id="mSV-Ly-wVD"/>
+                            <constraint firstItem="uPp-ZO-fEA" firstAttribute="leading" secondItem="gnr-MF-OKt" secondAttribute="leading" id="orC-Ad-35L"/>
+                            <constraint firstItem="Zrp-v8-hem" firstAttribute="top" secondItem="itE-hj-NS5" secondAttribute="bottom" constant="51" id="pMi-Qj-k0F"/>
+                            <constraint firstItem="gnr-MF-OKt" firstAttribute="leading" secondItem="Zrp-v8-hem" secondAttribute="leading" id="r7S-jo-mwE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location" id="uyu-IS-1Ej"/>
+                    <connections>
+                        <outlet property="currentField" destination="Zrp-v8-hem" id="zaS-LK-wnQ"/>
+                        <outlet property="destinationField" destination="gnr-MF-OKt" id="P65-I0-wDQ"/>
+                        <outlet property="viewRouteButton" destination="uPp-ZO-fEA" id="QAX-j9-k66"/>
+                        <outletCollection property="checkAddressButtons" destination="jwz-bL-AcZ" collectionClass="NSMutableArray" id="NsX-b1-xj2"/>
+                        <outletCollection property="checkAddressButtons" destination="9nm-fD-jFK" collectionClass="NSMutableArray" id="9c2-4G-vZB"/>
+                        <segue destination="fSF-Tv-GxC" kind="show" identifier="viewMap" id="gch-n8-rUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uB9-fw-M9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="-22"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zQU-yl-q1D">
+            <objects>
+                <tabBarController id="fSF-Tv-GxC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HFG-p8-vhi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TFa-in-sKy" kind="relationship" relationship="viewControllers" id="bey-W7-18i"/>
+                        <segue destination="8HC-Fb-6rk" kind="relationship" relationship="viewControllers" id="ZSh-YO-De0"/>
+                        <segue destination="NTf-OZ-qZ6" kind="relationship" relationship="viewControllers" id="O5r-Do-hin"/>
+                        <segue destination="Lec-04-7LK" kind="relationship" relationship="viewControllers" id="Asg-w5-NUe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgb-10-deM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-22"/>
+        </scene>
+        <!--Route-->
+        <scene sceneID="RP8-eP-H04">
+            <objects>
+                <viewController id="TFa-in-sKy" customClass="RouteViewController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gBt-JA-Jg0"/>
+                        <viewControllerLayoutGuide type="bottom" id="QnX-af-5mf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9sN-NC-QzP" userLabel="Route">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf6-GU-McX">
+                                <rect key="frame" x="0.0" y="492" width="600" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lQd-p1-4Eb">
+                                <rect key="frame" x="0.0" y="64" width="600" height="425"/>
+                                <connections>
+                                    <outlet property="delegate" destination="TFa-in-sKy" id="9Nu-nc-mST"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lQd-p1-4Eb" firstAttribute="top" secondItem="gBt-JA-Jg0" secondAttribute="bottom" id="HDn-aO-wut"/>
+                            <constraint firstItem="Cf6-GU-McX" firstAttribute="trailing" secondItem="lQd-p1-4Eb" secondAttribute="trailing" id="Rfm-J9-LVZ"/>
+                            <constraint firstItem="lQd-p1-4Eb" firstAttribute="leading" secondItem="9sN-NC-QzP" secondAttribute="leading" id="Wjp-3C-a0N"/>
+                            <constraint firstItem="QnX-af-5mf" firstAttribute="top" secondItem="lQd-p1-4Eb" secondAttribute="bottom" constant="62" id="aaj-Nc-CBy"/>
+                            <constraint firstItem="Cf6-GU-McX" firstAttribute="leading" secondItem="lQd-p1-4Eb" secondAttribute="leading" id="dgs-8F-3PL"/>
+                            <constraint firstItem="Cf6-GU-McX" firstAttribute="top" secondItem="lQd-p1-4Eb" secondAttribute="bottom" constant="3" id="mFP-Su-EDN"/>
+                            <constraint firstItem="Cf6-GU-McX" firstAttribute="bottom" secondItem="QnX-af-5mf" secondAttribute="top" constant="-3" id="v4D-Cb-fse"/>
+                            <constraint firstAttribute="trailing" secondItem="lQd-p1-4Eb" secondAttribute="trailing" id="xer-Ql-SHf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Route" id="DEf-PO-V1v"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="Cf6-GU-McX" id="tXJ-fe-OPB"/>
+                        <outlet property="mapsView" destination="lQd-p1-4Eb" id="REL-Bm-gWf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FA-ee-Ov4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="-521"/>
+        </scene>
+        <!--Taxi-->
+        <scene sceneID="IKT-f1-94A">
+            <objects>
+                <viewController id="NTf-OZ-qZ6" userLabel="Taxi" customClass="TaxiController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jgZ-f9-Bgc"/>
+                        <viewControllerLayoutGuide type="bottom" id="1fE-fx-qyr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0tq-t1-xja">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.85542929290000003" green="0.14032438699999999" blue="0.065727399929999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Taxi" id="dvK-xe-BbO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBN-Nr-EuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="707"/>
+        </scene>
+        <!--Feeds-->
+        <scene sceneID="hUI-CH-87Q">
+            <objects>
+                <viewController id="Lec-04-7LK" customClass="TwitterFeedController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R1y-uw-bj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gbh-l2-SBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oQT-fM-oe7" userLabel="Feeds">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feeds" id="NUV-Jc-jFO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9J-0Y-j6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="892"/>
+        </scene>
+        <!--Skybus-->
+        <scene sceneID="hBt-Cp-bpq">
+            <objects>
+                <viewController id="8HC-Fb-6rk" userLabel="Skybus" customClass="SkybusController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="smr-vC-N8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="vE3-V0-3jc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eb7-xq-WyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.02728689317" green="0.47650204330000001" blue="0.92471498249999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Skybus" id="VjL-Fb-0f5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="He5-ur-Bjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="208"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vqb-K4-fbT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axJ-lk-WjW" customClass="NavigationController" customModule="MelbourneWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6sD-3K-Gf1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LP6-3z-bUr" kind="relationship" relationship="rootViewController" id="fxc-iG-b0m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BW8-1x-Cl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="-42"/>
+        </scene>
+    </scenes>
+</document>

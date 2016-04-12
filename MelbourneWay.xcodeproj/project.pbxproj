@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41E53714D65DF22082B514D8 /* Pods_MelbourneWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA62ECDDA2EC296CA31EEB0 /* Pods_MelbourneWay.framework */; };
+		828E6ABE7AFF940FF9AF846C /* Pods_MelbourneWayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D289CFDE7B310DD12676C2 /* Pods_MelbourneWayUITests.framework */; };
+		B52A36B51CB4F3A500633220 /* Skybus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52A36B41CB4F3A500633220 /* Skybus.swift */; };
+		B54743EE1CB4FA3000663D6A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54743ED1CB4FA3000663D6A /* RealmSwift.framework */; };
+		B558C9631CA95E2300E1966A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558C9621CA95E2300E1966A /* NavigationController.swift */; };
+		B57B08701CB2C2A500293654 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B086F1CB2C2A500293654 /* LocationController.swift */; };
+		B57B08721CB2D8E200293654 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B08711CB2D8E200293654 /* RouteViewController.swift */; };
+		B57B08741CB2E28900293654 /* DestinationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B08731CB2E28900293654 /* DestinationTableView.swift */; };
+		B57B08761CB31D1800293654 /* SkybusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B08751CB31D1800293654 /* SkybusController.swift */; };
+		B57B08781CB31D2700293654 /* TaxiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B08771CB31D2700293654 /* TaxiController.swift */; };
+		B57B087A1CB31D3800293654 /* TwitterFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B08791CB31D3800293654 /* TwitterFeedController.swift */; };
+		B5EF79DE1CA95425003EF47D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF79DD1CA95425003EF47D /* AppDelegate.swift */; };
+		B5EF79E31CA95425003EF47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EF79E11CA95425003EF47D /* Main.storyboard */; };
+		B5EF79E61CA95425003EF47D /* MelbourneWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5EF79E41CA95425003EF47D /* MelbourneWay.xcdatamodeld */; };
+		B5EF79E81CA95425003EF47D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EF79E71CA95425003EF47D /* Assets.xcassets */; };
+		B5EF79EB1CA95425003EF47D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EF79E91CA95425003EF47D /* LaunchScreen.storyboard */; };
+		B5EF79F61CA95426003EF47D /* MelbourneWayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF79F51CA95426003EF47D /* MelbourneWayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5EF79F21CA95426003EF47D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5EF79D21CA95425003EF47D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5EF79D91CA95425003EF47D;
+			remoteInfo = MelbourneWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A44ED3F89007E3207F4276 /* Pods-MelbourneWayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelbourneWayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MelbourneWayUITests/Pods-MelbourneWayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		020C50D9110FD55EC464073E /* Pods-MelbourneWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelbourneWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MelbourneWay/Pods-MelbourneWay.release.xcconfig"; sourceTree = "<group>"; };
+		26D64BAE97B9C6CF4C2988B6 /* Pods-MelbourneWayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelbourneWayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MelbourneWayUITests/Pods-MelbourneWayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CA62ECDDA2EC296CA31EEB0 /* Pods_MelbourneWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelbourneWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52A36B41CB4F3A500633220 /* Skybus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skybus.swift; sourceTree = "<group>"; };
+		B54743ED1CB4FA3000663D6A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
+		B558C9621CA95E2300E1966A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		B57B086F1CB2C2A500293654 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		B57B08711CB2D8E200293654 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		B57B08731CB2E28900293654 /* DestinationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableView.swift; sourceTree = "<group>"; };
+		B57B08751CB31D1800293654 /* SkybusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkybusController.swift; sourceTree = "<group>"; };
+		B57B08771CB31D2700293654 /* TaxiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiController.swift; sourceTree = "<group>"; };
+		B57B08791CB31D3800293654 /* TwitterFeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFeedController.swift; sourceTree = "<group>"; };
+		B5EF79DA1CA95425003EF47D /* MelbourneWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelbourneWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EF79DD1CA95425003EF47D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5EF79E21CA95425003EF47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5EF79E51CA95425003EF47D /* MelbourneWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MelbourneWay.xcdatamodel; sourceTree = "<group>"; };
+		B5EF79E71CA95425003EF47D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5EF79EA1CA95425003EF47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5EF79EC1CA95425003EF47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5EF79F11CA95426003EF47D /* MelbourneWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbourneWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EF79F51CA95426003EF47D /* MelbourneWayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelbourneWayUITests.swift; sourceTree = "<group>"; };
+		B5EF79F71CA95426003EF47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7D289CFDE7B310DD12676C2 /* Pods_MelbourneWayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelbourneWayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE67D86BE37E1A16AD84DD50 /* Pods-MelbourneWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelbourneWay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MelbourneWay/Pods-MelbourneWay.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5EF79D71CA95425003EF47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54743EE1CB4FA3000663D6A /* RealmSwift.framework in Frameworks */,
+				41E53714D65DF22082B514D8 /* Pods_MelbourneWay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EF79EE1CA95426003EF47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828E6ABE7AFF940FF9AF846C /* Pods_MelbourneWayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37A92332CA6D737E2B816843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54743ED1CB4FA3000663D6A /* RealmSwift.framework */,
+				5CA62ECDDA2EC296CA31EEB0 /* Pods_MelbourneWay.framework */,
+				D7D289CFDE7B310DD12676C2 /* Pods_MelbourneWayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B52112261CB4EC0200D9BDA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B52A36B41CB4F3A500633220 /* Skybus.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5EF79D11CA95425003EF47D = {
+			isa = PBXGroup;
+			children = (
+				B5EF79DC1CA95425003EF47D /* MelbourneWay */,
+				B5EF79F41CA95426003EF47D /* MelbourneWayUITests */,
+				B5EF79DB1CA95425003EF47D /* Products */,
+				FB8CF4C5B8FF96A3254E1051 /* Pods */,
+				37A92332CA6D737E2B816843 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5EF79DB1CA95425003EF47D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF79DA1CA95425003EF47D /* MelbourneWay.app */,
+				B5EF79F11CA95426003EF47D /* MelbourneWayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5EF79DC1CA95425003EF47D /* MelbourneWay */ = {
+			isa = PBXGroup;
+			children = (
+				B52112261CB4EC0200D9BDA2 /* Model */,
+				B5EF79DD1CA95425003EF47D /* AppDelegate.swift */,
+				B5EF79E11CA95425003EF47D /* Main.storyboard */,
+				B5EF79E71CA95425003EF47D /* Assets.xcassets */,
+				B5EF79E91CA95425003EF47D /* LaunchScreen.storyboard */,
+				B5EF79EC1CA95425003EF47D /* Info.plist */,
+				B5EF79E41CA95425003EF47D /* MelbourneWay.xcdatamodeld */,
+				B558C9621CA95E2300E1966A /* NavigationController.swift */,
+				B57B086F1CB2C2A500293654 /* LocationController.swift */,
+				B57B08711CB2D8E200293654 /* RouteViewController.swift */,
+				B57B08731CB2E28900293654 /* DestinationTableView.swift */,
+				B57B08751CB31D1800293654 /* SkybusController.swift */,
+				B57B08771CB31D2700293654 /* TaxiController.swift */,
+				B57B08791CB31D3800293654 /* TwitterFeedController.swift */,
+			);
+			path = MelbourneWay;
+			sourceTree = "<group>";
+		};
+		B5EF79F41CA95426003EF47D /* MelbourneWayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF79F51CA95426003EF47D /* MelbourneWayUITests.swift */,
+				B5EF79F71CA95426003EF47D /* Info.plist */,
+			);
+			path = MelbourneWayUITests;
+			sourceTree = "<group>";
+		};
+		FB8CF4C5B8FF96A3254E1051 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE67D86BE37E1A16AD84DD50 /* Pods-MelbourneWay.debug.xcconfig */,
+				020C50D9110FD55EC464073E /* Pods-MelbourneWay.release.xcconfig */,
+				26D64BAE97B9C6CF4C2988B6 /* Pods-MelbourneWayUITests.debug.xcconfig */,
+				00A44ED3F89007E3207F4276 /* Pods-MelbourneWayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5EF79D91CA95425003EF47D /* MelbourneWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5EF79FA1CA95426003EF47D /* Build configuration list for PBXNativeTarget "MelbourneWay" */;
+			buildPhases = (
+				11A3E7CF0EF93C313F790E56 /* Check Pods Manifest.lock */,
+				B5EF79D61CA95425003EF47D /* Sources */,
+				B5EF79D71CA95425003EF47D /* Frameworks */,
+				B5EF79D81CA95425003EF47D /* Resources */,
+				248B7A9FF91DC6693979250B /* Embed Pods Frameworks */,
+				5AC6D7485F97ED78E84080BC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MelbourneWay;
+			productName = MelbourneWay;
+			productReference = B5EF79DA1CA95425003EF47D /* MelbourneWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5EF79F01CA95426003EF47D /* MelbourneWayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5EF79FD1CA95426003EF47D /* Build configuration list for PBXNativeTarget "MelbourneWayUITests" */;
+			buildPhases = (
+				AF0DA7D4B4BA99F02BACB157 /* Check Pods Manifest.lock */,
+				B5EF79ED1CA95426003EF47D /* Sources */,
+				B5EF79EE1CA95426003EF47D /* Frameworks */,
+				B5EF79EF1CA95426003EF47D /* Resources */,
+				DB613F16F182765C7354E906 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5EF79F31CA95426003EF47D /* PBXTargetDependency */,
+			);
+			name = MelbourneWayUITests;
+			productName = MelbourneWayUITests;
+			productReference = B5EF79F11CA95426003EF47D /* MelbourneWayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5EF79D21CA95425003EF47D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = RMIT;
+				TargetAttributes = {
+					B5EF79D91CA95425003EF47D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8DNE6H9YQX;
+					};
+					B5EF79F01CA95426003EF47D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8DNE6H9YQX;
+						TestTargetID = B5EF79D91CA95425003EF47D;
+					};
+				};
+			};
+			buildConfigurationList = B5EF79D51CA95425003EF47D /* Build configuration list for PBXProject "MelbourneWay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5EF79D11CA95425003EF47D;
+			productRefGroup = B5EF79DB1CA95425003EF47D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5EF79D91CA95425003EF47D /* MelbourneWay */,
+				B5EF79F01CA95426003EF47D /* MelbourneWayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5EF79D81CA95425003EF47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EF79EB1CA95425003EF47D /* LaunchScreen.storyboard in Resources */,
+				B5EF79E81CA95425003EF47D /* Assets.xcassets in Resources */,
+				B5EF79E31CA95425003EF47D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EF79EF1CA95426003EF47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A3E7CF0EF93C313F790E56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		248B7A9FF91DC6693979250B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MelbourneWay/Pods-MelbourneWay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC6D7485F97ED78E84080BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MelbourneWay/Pods-MelbourneWay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0DA7D4B4BA99F02BACB157 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB613F16F182765C7354E906 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MelbourneWayUITests/Pods-MelbourneWayUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5EF79D61CA95425003EF47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57B08761CB31D1800293654 /* SkybusController.swift in Sources */,
+				B57B08781CB31D2700293654 /* TaxiController.swift in Sources */,
+				B57B08741CB2E28900293654 /* DestinationTableView.swift in Sources */,
+				B57B08701CB2C2A500293654 /* LocationController.swift in Sources */,
+				B52A36B51CB4F3A500633220 /* Skybus.swift in Sources */,
+				B57B087A1CB31D3800293654 /* TwitterFeedController.swift in Sources */,
+				B5EF79E61CA95425003EF47D /* MelbourneWay.xcdatamodeld in Sources */,
+				B558C9631CA95E2300E1966A /* NavigationController.swift in Sources */,
+				B57B08721CB2D8E200293654 /* RouteViewController.swift in Sources */,
+				B5EF79DE1CA95425003EF47D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EF79ED1CA95426003EF47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EF79F61CA95426003EF47D /* MelbourneWayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5EF79F31CA95426003EF47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5EF79D91CA95425003EF47D /* MelbourneWay */;
+			targetProxy = B5EF79F21CA95426003EF47D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5EF79E11CA95425003EF47D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5EF79E21CA95425003EF47D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5EF79E91CA95425003EF47D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5EF79EA1CA95425003EF47D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5EF79F81CA95426003EF47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5EF79F91CA95426003EF47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5EF79FB1CA95426003EF47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE67D86BE37E1A16AD84DD50 /* Pods-MelbourneWay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = MelbourneWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3449996.MelbourneWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5EF79FC1CA95426003EF47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020C50D9110FD55EC464073E /* Pods-MelbourneWay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = MelbourneWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3449996.MelbourneWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B5EF79FE1CA95426003EF47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D64BAE97B9C6CF4C2988B6 /* Pods-MelbourneWayUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MelbourneWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3449996.MelbourneWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MelbourneWay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B5EF79FF1CA95426003EF47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A44ED3F89007E3207F4276 /* Pods-MelbourneWayUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MelbourneWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3449996.MelbourneWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MelbourneWay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5EF79D51CA95425003EF47D /* Build configuration list for PBXProject "MelbourneWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EF79F81CA95426003EF47D /* Debug */,
+				B5EF79F91CA95426003EF47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5EF79FA1CA95426003EF47D /* Build configuration list for PBXNativeTarget "MelbourneWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EF79FB1CA95426003EF47D /* Debug */,
+				B5EF79FC1CA95426003EF47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5EF79FD1CA95426003EF47D /* Build configuration list for PBXNativeTarget "MelbourneWayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EF79FE1CA95426003EF47D /* Debug */,
+				B5EF79FF1CA95426003EF47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5EF79E41CA95425003EF47D /* MelbourneWay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5EF79E51CA95425003EF47D /* MelbourneWay.xcdatamodel */,
+			);
+			currentVersion = B5EF79E51CA95425003EF47D /* MelbourneWay.xcdatamodel */;
+			path = MelbourneWay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B5EF79D21CA95425003EF47D /* Project object */;
+}
